@@ -61,3 +61,8 @@ newarr = np.array([[1,2,3,4,5],
 print(newarr[0:4:2]) # this will return the elements from the first and third rows and the first, third and fifth columns of the array, resulting in [[1,3,5],[11,13,15]]
 print(newarr[::-1]) # this will reverse the order of the rows and columns of the array, resulting in [[25,24,23,22,21],[20,19,18,17,16],[15,14,13,12,11],[10,9,8,7,6],[5,4,3,2,1]]
 print(newarr[:,1]) # this will return the second column of the array, resulting in [2,7,12,17,22]
+
+
+
+
+
