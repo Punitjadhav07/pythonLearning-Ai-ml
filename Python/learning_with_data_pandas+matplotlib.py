@@ -1,11 +1,12 @@
+from pathlib import Path
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-df=pd.read_csv(
-    '/Users/punitjadhav/Documents/Ai ML /Python Basics/pythonLearning-Ai-ml/FILES/data.csv',
-    
-)
+# Make the CSV path work no matter where the repo is located.
+DATA_PATH = Path(__file__).resolve().parents[1] / "FILES" / "data.csv"
+df = pd.read_csv(DATA_PATH)
 
 type_counts =df["Type1"].value_counts(ascending= True)
 

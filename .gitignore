@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual envs
+.venv/
+venv/
+env/
+Scikit-learn/.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Local Jupyter kernels
+.local-kernels/
+Scikit-learn/.local-kernels/
+
+# OS/env
+.DS_Store
+.env

@@ -1,4 +1,0 @@
-# TensorFlow currently doesn't provide wheels for all Python versions (notably newer ones).
-# Keep this file safe to run even when TensorFlow isn't available by using environment markers.
-tensorflow; python_version < "3.13"
-

@@ -1,10 +1,10 @@
+from pathlib import Path
+
 import pandas as pd
 
-# Load CSV file and set Name as index
-df = pd.read_csv(
-    '/Users/punitjadhav/Documents/Ai ML /Python Basics/pythonLearning-Ai-ml/FILES/data.csv',
-    index_col='Name'
-)
+# Load CSV file and set Name as index.
+DATA_PATH = Path(__file__).resolve().parents[1] / "FILES" / "data.csv"
+df = pd.read_csv(DATA_PATH, index_col="Name")
 
 # -------------------------------
 # Displaying data

@@ -1,8 +1,11 @@
+from pathlib import Path
+
 import pandas as pd
-df= pd.read_csv(
-    '/Users/punitjadhav/Documents/Ai ML /Python Basics/pythonLearning-Ai-ml/FILES/data.csv',
-    index_col='Name'
-)   
+
+# Make the CSV path work no matter where the repo is located.
+DATA_PATH = Path(__file__).resolve().parents[1] / "FILES" / "data.csv"
+
+df = pd.read_csv(DATA_PATH, index_col="Name")
 # dropping irrelevant column
 df=df.drop(columns=['Legendary'])
 
